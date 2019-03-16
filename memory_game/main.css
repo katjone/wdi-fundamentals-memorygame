@@ -1,0 +1,20 @@
+nav {
+    background-color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    float: left;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
