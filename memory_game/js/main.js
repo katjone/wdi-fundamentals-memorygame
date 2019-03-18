@@ -1,9 +1,29 @@
-console.log('Up and running!')
+
 //Cards
-var card_1 = "queen";
-var card_2 = "king";
-var card_3 = "king";
-var card_4 = "queen";
-//Display the card value
-console.log("User flipped " + card_1);
-/console.log("User flipped " + card_3);
+var cards = ["queen", "queen", "king", "king"];
+
+//Cards in Play
+var cardsInPlay = [];
+
+//Selected Cards
+var cardOne = cards[0];
+var cardTwo = cards[2];
+
+
+//Add to cardsInPlay array
+cardsInPlay.push(cardOne);
+cardsInPlay.push(cardTwo);
+
+//Does it show up?
+console.log("User flipped ", cardOne);
+console.log("User flipped ", cardTwo);
+
+//Game Logic
+if (cardsInPlay.length === 2) {
+    console.log("Two cards selected.");
+}
+if (cardsInPlay[0] === cardsInPlay[1]) {
+    alert("Matching Cards!");
+} else {
+    alert("Try again!");
+}
